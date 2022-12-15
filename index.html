@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylepage.css">
+    <link rel="stylesheet" href="css/valuepage.css">
+    <link rel="stylesheet" href="css/stylenav.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <title>Document FR</title>
+</head>
+<body>
+        <div id="container">
+            <nav>
+              <div id="logo">
+                <a href="index.html">Loulidi Car</a>
+              </div>
+              <ul>
+                <li><a href="inc/acconte.php">Acconte</a></li>
+                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Declarant &nbsp;<i class="fa fa-caret-down"></i></a>
+                  <div class="dd">
+                    <div cl="up_arrow"></div>
+                  <ul>
+                    
+                    <li><a id="ContCar" href="#prici">Loulidi Car</a></li>
+                    <li><a href="#prici">2018</a></li>
+                    <li><a href="#prici">2017</a></li>
+                  </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+<form action="">
+    <h2>التصريح بمرتكب المخالفة<br>Déclaration de l’auteur de l’infraction</h2>
+        <table id="prici" class="table-bordered">
+            <tr>
+                <td>N° de l’avis de contravention<br>&nbsp;</td>
+                <td colspan="2" class="txtC">
+                    <input type="text" name="" id="contraventionL" maxlength="10">
+                    <b>RF</b>
+                    <input type="text" name="" id="contraventionS" maxlength="4">
+                    <br>&nbsp;</td>
+                <td class="txtR">رقم اإلشعار بالمخالفة<br>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2">Je soussigné(e):
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="soussigne" id="RadioCross1"></td>
+                            <td><label for="RadioCross1">Personne physique</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="soussigne" id="RadioCross2"></td>
+                            <td><label for="RadioCross2">Représentant légal de la personne morale ou de l’agence de location 
+                                de voitures sans chauffeur en particulier</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="soussigne" id="RadioCross3"></td>
+                            <td><label for="RadioCross3">Personne habilitée en cas des administrations publiques, aux 
+                                établissements et entreprise publics et aux collectivités locales</label></td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" class="txtR">أنا الممضي )ة( أسفله
+                    <table>
+                        <tr>
+                            <td><label for="RadioCross1AR">شخص ذاتي</label></td>
+                            <td><input type="radio" name="soussigne2" id="RadioCross1AR"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RadioCross2AR">الممثل القانوني في حالة األشخاص المعنويين عامة أو وكاالت كراء السيارات 
+                                بدون سائق على وجه الخصوص</label></td>
+                            <td><input type="radio" name="soussigne2" id="RadioCross2AR"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="RadioCross3AR">شخص له الصالحية القانونية إذا تعلق األمر باإلدارات العمومية٬ بالمؤسسات و الشركات العمومية و الجماعات المحلية </label></td>
+                            <td><input type="radio" name="soussigne2" id="RadioCross3AR"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Nom</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="NomF" placeholder="Nom"></td>
+                <td class="txtR">الإسم العائلي</td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="NomP" placeholder="Prénom"></td>
+                <td class="txtR">الإسم الشخصي</td>
+            </tr>
+            <tr>
+                <td>Fonction</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="Fonc" placeholder="Fonction"></td>
+                <td class="txtR">المهنة</td>
+            </tr>
+            <tr>
+                <td>N° de GSM</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="GSM" placeholder="N° de GSM"></td>
+                <td class="txtR">رقم الهاتف النقال</td>
+            </tr>
+            <tr>
+                <td>Adresse mail</td>
+                <td colspan="2" class="txtC"><input type="email" name="" id="mail" placeholder="Adresse mail"></td>
+                <td class="txtR">عنوان البريد اإللكتروني</td>
+            </tr>
+            <tr>
+                <td>Raison sociale</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="RC" placeholder="Raison sociale"></td>
+                <td class="txtR">اسم الشركة أو اإلدارة</td>
+            </tr>
+            <tr>
+                <td>Adresse</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="Adres" placeholder="Adresse"></td>
+                <td class="txtR">العنوان</td>
+            </tr>
+            <tr>
+                <td>Ville <input type="text" name="" id="Ville1" placeholder="Ville"></td>
+                <td colspan="2" class="txtC">Code postal<br>
+                    <input type="text" name="" id="CodePostal" maxlength="5" placeholder="Code postal"><br>
+                    الرمز البريدي
+                </td>
+                <td class="txtR"><input onkeyup="arabicValue(Ville2)" dir="rtl" type="text"  name="" id="Ville2" placeholder="المدينة"> المدينة</td>
+            </tr>
+            <tr>
+                <td>
+                    Déclare que le véhicule, immatriculé sous le numéro
+                    <br>objet de l’avis de contravention sus indiqué : 
+                    <br>était conduit, au moment de la constatation de l’infraction par :
+                </td>
+                <td colspan="2" class="txtC">
+                    <input type="text" name="" id="matriculeL" maxlength="5" placeholder="99 999">&nbsp;
+                    <select name="" id="SelectMatricule">
+                        <option value="">..</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                    </select>&nbsp;
+                    <input type="text" name="" id="matriculeS" maxlength="2" placeholder="15">
+                    <br>
+                    <input type="text" name="" id="AvisContravention">
+                    <br>
+                    <input type="text" name="" id="InfractionPar">
+                    
+                </td>
+                <td class="txtR">
+                    أصرح أن المركبة المسجلة نحت رقم-
+                    <br>موضوع الإشعار بالمخالفة المشار إليها-
+                    <br>أعلاه, كانت مسافة وقت معاينة المخالفة من طرف
+                </td>
+            </tr>
+            <tr id="ColorBl">
+                <td colspan="2">Personne physique</td>
+                <td colspan="2" class="txtR">شخص ذاتي</td>
+            </tr>
+            <tr>
+                <td>Nom</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="NomFP" placeholder="Nom"></td>
+                <td class="txtR">الإسم العائلي</td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="NomPP" placeholder="Prénom"></td>
+                <td class="txtR"> الإسم الشخصي</td>
+            </tr>
+            <tr>
+                <td>Adresse</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="AdressFP" placeholder="Adresse"></td>
+                <td class="txtR">العنوان</td>
+            </tr>
+            <tr>
+                <td>Ville <input type="text" name="" id="VilleFP" placeholder="Ville"></td>
+                <td colspan="2" class="txtC">Code postal<br>
+                    <input type="text" name="" id="CodePostalFP" maxlength="5" placeholder="Code postal"><br>
+                    الرمز البريدي
+                </td>
+                <td class="txtR"><input type="text" name="" id="VilleFPAR" onkeyup="arabicValue(VilleFPAR)" dir="rtl" placeholder="المدينة"> المدينة</td>
+            </tr>
+            <tr>
+                <td>N° de la C.N.I.E ou de la carte</td>
+                <td colspan="2" class="txtC">
+                    <input type="text" name="" id="cinSFP" maxlength="2" placeholder="C">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="" id="cinLFP" maxlength="6" placeholder="000 000">
+                </td>
+                <td class="txtR">رقم البطاقة الوطنية للتعريف اإللكترونية أو بطاقة
+                    الإقامة</td>
+            </tr>
+            <tr>
+                <td>N° de permis de conduire</td>
+                <td colspan="2" class="txtC">
+                    <input type="text" name="" id="permiSFP" maxlength="2" placeholder="03">&nbsp; <b>/</b> &nbsp;
+                    <input type="text" name="" id="permiLFP" maxlength="6" placeholder="000 000">
+                </td>
+                <td class="txtR">رقم رخصة السياقة</td>
+            </tr>
+            <tr id="ColorBl">
+                <td colspan="2">Personne morale <br> &nbsp;</td>
+                <td colspan="2" class="txtR">شخص معنوي <br> &nbsp;</td>
+            </tr>
+            <tr>
+                <td>Raison sociale</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="RaisonSociale_FM" placeholder="Raison sociale"></td>
+                <td class="txtR"> االسم الشركة</td>
+            </tr>
+            <tr>
+                <td>Adresse</td>
+                <td colspan="2" class="txtC"><input type="text" name="" id="Adresse_FM" placeholder="Adresse"></td>
+                <td class="txtR">العنوان</td>
+            </tr>
+            <tr>
+                <td>Ville <input type="text" name="" id="Ville_FM" placeholder="Ville"></td>
+                <td colspan="2" class="txtC">Code postal<br>
+                    <input type="text" name="" id="CodePostal_FM" maxlength="5" placeholder="Code postal"><br>
+                    الرمز البريدي
+                </td>
+                <td class="txtR"><input type="text" name="" id="Ville_FM_AR" onkeyup="arabicValue(Ville_FM_AR)" dir="rtl" placeholder="المدينة"> المدينة</td>
+            </tr>
+            <tr>
+                <td>Fait a : <input type="text" name="" id="Fait_a"></td>
+                <td colspan="2" class="txtC">Le :
+                    <input type="date" name="" id="LeDate" min="2020-01-01" max="2030-01-31">
+                    : في
+                </td>
+                <td class="txtR"><input type="text" name="" id="Fait_a_AR" onkeyup="arabicValue(Fait_a_AR)" dir="rtl"> : حرر ب</td>
+            </tr>
+
+        </table>
+
+<br>
+<div class="btn1">
+    <input class="form-vider-button" type="reset" value="vider">
+    <input class="form-submit-button" type="button" value="Submit">
+</div>
+</form>
+<br><br><br>
+<div class="book">
+    <div class="page">
+      <div class="subpage">
+        <div id="image">
+            <img src="image/Formulaire_Declaration_RF-1.jpg" alt="">
+            <div id="Content">
+                <span id="RF1_p"></span>
+                <span id="RF2_p"></span>
+    
+                <span id="cross1"><img src="image/cross.png" alt=""></span>
+                <span id="cross2"><img src="image/cross.png" alt=""></span>
+                <span id="cross3"><img src="image/cross.png" alt=""></span>
+                <span id="cross11"><img src="image/cross.png" alt=""></span>
+                <span id="cross22"><img src="image/cross.png" alt=""></span>
+                <span id="cross33"><img src="image/cross.png" alt=""></span>
+    
+                <div id="societe">
+                    <p id="nom"></p>
+                    <p id="prenom"></p>
+                    <p id="fonct"></p>
+                    <p id="gsm"></p>
+                    <p id="email"></p>
+                    <p id="raison"></p>
+                    <div id="Adress">
+                        <p id="2Adress"></p>
+                    </div>
+                </div>
+    
+                <span id="VilleSociete"></span>
+                <span id="PostalSociete"></span>
+                <span id="VilleSocieteAR"></span>
+    
+                <span id="PmatriculeG"></span>
+                <span id="PmatriculeL"></span>
+                <span id="PmatriculeS"></span>
+    
+                <div id="indique">
+                  <p id="indiqueC"></p>
+                </div>
+                <div id="par">
+                  <p id="parC"></p>
+                </div>
+    
+                <!-------------------------PERSONNE PHYSIQUE-------------------->
+                <div id="physique">
+                  <p id="p_nom"></p>
+                  <p id="p_prenom"></p>
+                  <p id="p_Adress"></p>
+              </div>
+    
+              <span id="p_VilleSociete"></span>
+              <span id="p_PostalSociete"></span>
+              <span id="p_VilleSocieteAR"></span>
+    
+              <span id="cinS"></span>
+              <span id="cinL"></span>
+    
+              <div id="permi">
+                <span id="permiS"></span>
+                <span>/</span>
+                <span id="permiL"></span>
+              </div>
+                <!-------------------------PERSONNE MORALE---------------------->
+                <div id="moral">
+                  <p id="M_raison"></p>
+                  <p id="M_Adress"></p>
+              </div>
+    
+              <span id="M_VilleSociete"></span>
+              <span id="M_PostalSociete"></span>
+              <span id="M_VilleSocieteAR"></span>
+                <!-------------------------FAIT LE---------------------->
+                <span id="fait"></span>
+                <span id="le"></span>
+                <span id="faitAR"></span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+    <script src="js/JavaScript.js"></script>
+    <script src="js/input-filter.js"></script>
+</body>
+</html>
